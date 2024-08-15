@@ -5,40 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f1faee;
-        }
-        h1 {
             color: #333;
         }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
         .container {
             max-width: 600px;
             margin: 0 auto;
         }
+
+        .btns {
+            margin-top: 20px;
+        }
+
         .btn {
-            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
             padding: 15px 25px;
-            margin: 10px;
-            font-size: 16px;
-            color: #ffffff;
-            background-color: #007bff;
             border: none;
             border-radius: 5px;
             text-decoration: none;
-            text-align: center;
+            font-size: 1em;
+            margin: 10px;
             transition: background-color 0.3s ease;
         }
+
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenidos</h1>
-    <a href="/c2/">Contenedor 2</a>
-    <a href="/c3/">Contenedor 3</a>
+    <header>
+        <h1>Hola Mundo</h1>
+    </header>
+    <main>
+        <h2>Haga click en la página que desea visitar.</h2>
+        <div class="btns">
+            <a href="/c2/" class="btn">Api Tester</a>
+            <a href="/c3/" class="btn">DataFlow</a>
+        </div>
+    </main>
+    <footer>
+        <p>Realizado por Juan Aragón & Daniel Castañeda.</p>
+    </footer>
 </body>
 </html>
+
